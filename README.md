@@ -1,2 +1,2 @@
 # Portifolio
-Repositório com o portifólio pessoa
+Repositório com o portifólio pessoal
