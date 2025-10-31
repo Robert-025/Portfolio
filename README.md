@@ -1,2 +1,2 @@
-# Portifolio
-Repositório com o portifólio pessoal
+# Portfolio
+Repositório com o portfolio pessoal
