@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --verde-escuro: #08271C;
+  --verde-claro: #0DAB76;
+  --preto: #000;
+  --branco: #fff;
+  --cinza: #3B3B3B;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: var(--cinza);
+}
+
+/* ------------ CABEÇALHO ------------*/
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: var(--verde-escuro);
+  display: flex;
+  justify-content: center;
+}
+
+.content-cabecalho {
+  height: 100%;
+  width: 90%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-cabecalho h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 24px;
+}
+
+.info-cabecalho {
+  height: 100%;
+  width: 57%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-cabecalho {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-cabecalho a {
+  font-size: 20px;
+  color: var(--branco);
+  text-decoration: none;
+}
+
+.links-cabecalho a:hover {
+  font-size: 24px;
+  text-decoration: underline;
+  padding: 10px 15px;
+  background-color: var(--verde-claro);
+  border-radius: 20px;
+}
+
+/* ------------ CABEÇALHO ------------*/
+
+/* ------------ MAIN ------------*/
+
+
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-main {
+  height: 100%;
+  width: 77%;
+  /* background-color: aqua; */
+  display: flex;
+}
+
+.inicio {
+  width: 100%;
+  height: 615px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--branco);
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--branco);
+  margin: 0;
+  padding: 0;
+}
+
+.inicio img {
+  width: 415px;
+  height: 415px;
+  border-radius: 100%;
+}
+
+.infos-esquerda{
+  width: 33%;
+  height: 37%;
+  /* background-color: #0DAB76; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.infos-esquerda button {
+  height: 40px;
+  width: 160px;
+  background-color: var(--preto);
+  color: var(--branco);
+  border-radius: 15px;
+  font-size: 24px;
+}
+
+.redes-inicio {
+  height: auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: blue; */
+}
+
+.redes-inicio img {
+  width: 60px;
+  height: 60px;
+  border-radius: 0%;
+}
