@@ -130,6 +130,10 @@ h2 {
   margin: 100px 0 0 0;
 }
 
+.padding-subtitulos {
+  padding: 50px 0 0 0;
+}
+
 .inicio img {
   width: 415px;
   height: 415px;
@@ -212,10 +216,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.habilidades h3 {
-  padding-bottom: 50px;
+  text-align: center;
 }
 
 .skills {
@@ -226,6 +227,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 .skills p {
@@ -265,6 +267,7 @@ h3 {
 .secoes-habilidades .circulo {
   width: 25px;
   height: 25px;
+  padding: 0 5px;
 }
 
 .experiencias {
@@ -274,4 +277,78 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.vaga-aberta {
+  width: 100%;
+  height: auto;
+  /* background-color: var(--verde-escuro); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dados-vaga {
+  width: 100%;
+  height: 100px;
+  background-color: var(--verde-escuro);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--branco);
+  border-radius: 25px;
+  font-size: 24px;
+}
+
+.vaga-dir {
+  margin-left: 40px;
+}
+
+.vaga-esq img {
+  width: 30px;
+  height: auto;
+  margin-left: 15px;
+}
+
+.vaga-esq {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.funcao-vaga {
+  width: 100%;
+  height: auto;
+  background-color: var(--cinza-claro);
+  border-radius: 25px;
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.infor-vaga {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 40px;
+}
+
+.descricao-vaga {
+  margin-right: 40px;
+  text-align: justify;
+  background-color: aqua;
+}
+
+.logo-trabalho {
+  background-color: #0DAB76;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-trabalho img {
+  width: 185px;
+  height: auto;
 }
