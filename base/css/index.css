@@ -272,8 +272,8 @@ h3 {
 
 .experiencias {
   width: 100%;
-  height: 750px;
-  background-color: brown;
+  height: auto;
+  /* background-color: brown; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -288,14 +288,14 @@ h3 {
   justify-content: space-between;
 }
 
-.dados-vaga {
+.dados-vaga-aberta {
   width: 100%;
   height: 100px;
-  background-color: var(--verde-escuro);
+  background-color: var(--cinza-claro);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--branco);
+  color: var(--preto);
   border-radius: 25px;
   font-size: 24px;
 }
@@ -335,12 +335,11 @@ h3 {
 .descricao-vaga {
   margin-right: 40px;
   text-align: justify;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .logo-trabalho {
-  background-color: #0DAB76;
-  height: 100%;
+  /* background-color: #0DAB76; */
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -351,4 +350,82 @@ h3 {
 .logo-trabalho img {
   width: 185px;
   height: auto;
+}
+
+.vaga-fechada {
+  width: 100%;
+  height: auto;
+  /* background-color: var(--verde-escuro); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.dados-vaga {
+  width: 100%;
+  height: 100px;
+  background-color: var(--verde-escuro);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--branco);
+  border-radius: 25px;
+  font-size: 24px;
+}
+
+.projetos {
+  width: 100%;
+  height: auto;
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abas-projetos {
+  width: 100%;
+  height: 335px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  height: 100%;
+  /* width: 31%; */
+  background-color: var(--verde-escuro);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 25px;
+  background-color: var(--cinza-claro);
+}
+
+.img-card img {
+  border-radius: 25px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.texto-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.texto-card a {
+  text-decoration: none;
+  color: var(--branco);
 }
