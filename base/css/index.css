@@ -446,12 +446,28 @@ h3 {
   justify-content: space-between;
   font-size: 24px;
   color: var(--branco);
+  background-color: aqua  ;
+}
+
+.conteudo {
+  font-size: 24px;
 }
 
 /* COLUNA ESQUERDA */
 
 .col-esquerda {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 515px;
+  background-color: blue;
+}
 
+.col-esquerda p {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
 }
 
 .item {
@@ -459,6 +475,10 @@ h3 {
   align-items: center;
   gap: 10px;
   /* margin: 18px 0; */
+}
+
+.item p {
+  font-size: 24px;
 }
 
 .item img {
@@ -474,14 +494,13 @@ h3 {
 }
 
 .col-direita label {
-  margin: 10px 0 5px;
-  font-size: 18px;
+  /* margin: 10px 0 5px; */
 }
 
 .col-direita input,
 .col-direita textarea {
   width: 100%;
-  padding: 10px;
+  /* padding: 10px; */
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -492,7 +511,7 @@ h3 {
   outline: 2px solid var(--verde-claro);
 }
 
-button {
+.col-direita button {
   margin-top: 20px;
   padding: 10px 40px;
   border: none;
