@@ -423,11 +423,13 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 24px;
-}
-
-.texto-card a {
   text-decoration: none;
   color: var(--branco);
+}
+
+.texto-card:hover {
+  /* outline: 2px solid var(--verde-claro); */
+  cursor: pointer;
 }
 
 .contato {
@@ -446,7 +448,7 @@ h3 {
   justify-content: space-between;
   font-size: 24px;
   color: var(--branco);
-  background-color: aqua  ;
+  /* background-color: aqua; */
 }
 
 .conteudo {
@@ -461,7 +463,7 @@ h3 {
   justify-content: space-between;
   width: 50%;
   height: 515px;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .col-esquerda p {
@@ -490,20 +492,38 @@ h3 {
 .col-direita {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 50%;
+  height: 515px;
+  /* background-color: blue; */
+  font-size: 24px;
 }
 
-.col-direita label {
-  /* margin: 10px 0 5px; */
-}
-
-.col-direita input,
-.col-direita textarea {
+.input {
   width: 100%;
-  /* padding: 10px; */
+  /* height: 40px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.input input {
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
+  /* width: 100%; */
+  height: 40px;
+}
+
+.mensagem {
+  display: flex;
+  flex-direction: column;
+}
+
+.mensagem textarea {
+  /* width: 100%; */
+  height: 150px;
+  border-radius: 10px;
+  border: none;
 }
 
 .col-direita input:focus,
@@ -521,4 +541,15 @@ h3 {
   color: black;
   cursor: pointer;
   align-self: center;
+}
+
+footer {
+  background-color: var(--verde-escuro);
+  width: 100%;
+  height: 100px;
+  color: var(--branco);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
