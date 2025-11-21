@@ -79,6 +79,13 @@ header {
   border-radius: 20px;
 }
 
+.links-cabecalho img:hover {
+  text-decoration: underline;
+  padding: 0;
+  /* background-color: var(--verde-claro); */
+  border-radius: 0;
+}
+
 /* ------------ CABEÇALHO ------------*/
 
 /* ------------ MAIN ------------*/
@@ -107,7 +114,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0 0 0;
 }
 
 h1 {
@@ -141,12 +147,13 @@ h2 {
 }
 
 .infos-esquerda {
-  width: 33%;
-  height: 60%;
+  width: 43%;
+  height: 70%;
   /* background-color: #0DAB76; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: aqua;
 }
 
 .infos-esquerda button {
@@ -552,4 +559,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1400px) {
+  .abas-projetos {
+    height: 275px;
+    width: 289px;
+  }
 }
