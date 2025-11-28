@@ -335,28 +335,34 @@ h3 {
 
 .infor-vaga {
   display: flex;
-  flex-direction: row;
   margin: 20px 40px;
+  align-items: center;
 }
 
 .descricao-vaga {
   margin-right: 40px;
   text-align: justify;
-  /* background-color: aqua; */
+  height: 100%;
+  background-color: aqua;
 }
 
 .logo-trabalho {
-  /* background-color: #0DAB76; */
+  background-color: #0DAB76;
   width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 
 .logo-trabalho img {
   width: 185px;
   height: auto;
+}
+
+.logo-trabalho p {
+  padding: 0;
+  margin: 0;
 }
 
 .vaga-fechada {
@@ -564,6 +570,12 @@ footer {
 @media (max-width: 1400px) {
   .abas-projetos {
     height: 275px;
-    width: 289px;
+  }
+
+  .img-card img {
+    border-radius: 25px;
+    width: 280px;
+    display: flex;
+    justify-content: flex-start;
   }
 }
