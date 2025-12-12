@@ -1,0 +1,27 @@
+body {
+    background-color: #3B3B3B;
+}
+
+.bg-body-tertiary {
+    background-color: #08291D !important;
+}
+
+.navbar a { 
+    color: #fff !important; 
+}
+
+.nav-link:hover { 
+    color: #aaa !important; 
+}
+
+.btn-tamanho {
+    width: 30%;
+}
+
+.foto {
+    border-radius: 100%;
+}
+
+.container {
+    background-color: burlywood;
+}

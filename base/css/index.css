@@ -103,7 +103,7 @@ main {
 .content-main {
   height: 100%;
   width: 77%;
-  /* background-color: aqua; */
+  background-color: blue;
   display: flex;
   flex-direction: column;
 }
@@ -568,6 +568,19 @@ footer {
 }
 
 @media (max-width: 1400px) {
+  .abas-projetos {
+    height: 275px;
+  }
+
+  .img-card img {
+    border-radius: 25px;
+    width: 280px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1120px) {
   .abas-projetos {
     height: 275px;
   }
