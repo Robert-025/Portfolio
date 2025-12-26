@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Noto Sans", sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
 body {
     background-color: #3B3B3B;
+
 }
 
 .bg-body-tertiary {
@@ -45,8 +54,39 @@ body {
     color: white;
 }
 
+li {
+    list-style-type: none;
+}
+
+.card-wrapper {
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+}
+
+.card-list {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.card-image {
+    max-width: 120px;
+    height: auto;
+}
+
+
 @media (max-width: 991px) {
     .btn-tamanho {
         width: 80%;
+    }
+
+    .redes {
+        width: 40px;
+    }
+
+    .card-image {
+        max-width: 80px;
+        height: auto;
     }
 }
