@@ -4,6 +4,8 @@
     font-family: "Noto Sans", sans-serif;
     box-sizing: border-box;
     color: white;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -31,13 +33,15 @@ body {
     border-radius: 100%;
 }
 
+.wdt-skills {
+    width: 80%;
+    /* background-color: aqua; */
+    display: flex;
+}
+
 .redes {
     width: 60px;
     height: auto;
-}
-
-.container {
-    /* background-color: burlywood; */
 }
 
 .backgroud-sobre {
@@ -78,6 +82,10 @@ li {
 
 @media (max-width: 991px) {
     .btn-tamanho {
+        width: 80%;
+    }
+
+    .wdt-redes {
         width: 80%;
     }
 
