@@ -50,6 +50,10 @@ body {
     color: white;
 }
 
+.backgroud-sobre p {
+    text-align: justify;
+}
+
 .container h2 {
     text-decoration: underline;
     text-underline-offset: 10px;
