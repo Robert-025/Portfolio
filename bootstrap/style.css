@@ -85,24 +85,17 @@ li {
     height: auto;
 }
 
-.accordion {
-    border-radius: 50px;
-    border: none;
-}
-
 .accordion-item {
     background-color: unset;
     border: none;
+    text-align: justify;
 }
 
 .accordion-header {
-    border-radius: 25px;
-    border: none;
-    width: 100%;
-    height: 75px;
+    cursor: pointer;
 }
 
-.card-image-company {
+.img-card {
     max-width: 185px;
     height: auto;
 }
