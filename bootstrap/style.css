@@ -85,7 +85,7 @@ li {
     height: auto;
 }
 
-.accordion-item {
+.accordion {
     background-color: unset;
     border: none;
     text-align: justify;
@@ -93,6 +93,23 @@ li {
 
 .accordion-header {
     cursor: pointer;
+}
+
+.accordion-body {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+}
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 5px 0px;
+}
+
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg);
 }
 
 .img-card {
