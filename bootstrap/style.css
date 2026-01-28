@@ -85,17 +85,17 @@ li {
     height: auto;
 }
 
-.accordion {
-    background-color: unset;
-    border: none;
-    text-align: justify;
+.accordion-item {
+    background-color: unset !important;
+    border: none !important;
+    text-align: justify !important;
 }
 
 .accordion-header {
     cursor: pointer;
 }
 
-.accordion-body {
+/* .accordion-body {
     opacity: 0;
     height: 0;
     overflow: hidden;
@@ -108,9 +108,9 @@ li {
     padding: 5px 0px;
 }
 
-.accordion:has(.active) .arrow {
+.accordion-content:has(.active) .arrow {
     transform: rotate(180deg);
-}
+} */
 
 .img-card {
     max-width: 185px;

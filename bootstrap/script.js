@@ -14,7 +14,7 @@ loop: true,
 
 });
 
-const accordions = document.querySelectorAll('.accordion');
+const accordions = document.querySelectorAll('.accordion-content');
 
 accordions.forEach(accordion => {
     accordion.addEventListener('click', () => {
