@@ -33,8 +33,6 @@ body {
     border-radius: 100%;
 }
 
-
-
 .wdt-skills {
     width: 80%;
     /* background-color: aqua; */
@@ -95,26 +93,23 @@ li {
     cursor: pointer;
 }
 
-/* .accordion-body {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity .3s;
+.active {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
-
-.accordion-body.active {
-    height: 100%;
-    opacity: 1;
-    padding: 5px 0px;
-}
-
-.accordion-content:has(.active) .arrow {
-    transform: rotate(180deg);
-} */
 
 .img-card {
     max-width: 185px;
     height: auto;
+}
+
+.card {
+    background-color: transparent;
+}
+
+.card-body {
+    border-width: 0 !important;
+    border-color: transparent !important;
 }
 
 @media (max-width: 991px) {

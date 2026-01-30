@@ -14,11 +14,11 @@ loop: true,
 
 });
 
-const accordions = document.querySelectorAll('.accordion-content');
+const accordions = document.querySelectorAll('.accordion-item');
 
 accordions.forEach(accordion => {
     accordion.addEventListener('click', () => {
-        const body = accordion.querySelector('.accordion-body');
+        const body = accordion.querySelector('.accordion-header');
         body.classList.toggle('active');
     })
 })
