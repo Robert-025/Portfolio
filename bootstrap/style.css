@@ -33,15 +33,19 @@ body {
     border-radius: 100%;
 }
 
-.wdt-skills {
-    width: 80%;
-    /* background-color: aqua; */
-    display: flex;
-}
+/* .wdt-redes {
+    width: 50%;
+} */
 
 .redes {
     width: 60px;
     height: auto;
+}
+
+.wdt-skills {
+    width: 80%;
+    /* background-color: aqua; */
+    display: flex;
 }
 
 .backgroud-sobre {
@@ -112,9 +116,19 @@ li {
     border-color: transparent !important;
 }
 
+.contact {
+    width: auto;
+    height: 500px;
+}
+
 .img-contact img{
     width: 50px;
     height: auto;
+}
+
+.message-input {
+    width: auto;
+    height: 150px;
 }
 
 @media (max-width: 991px) {
@@ -124,14 +138,42 @@ li {
 
     .wdt-redes {
         width: 80%;
+        justify-content: space-between;
     }
 
-    .redes {
+    /* .redes {
         width: 40px;
-    }
+    } */
 
     .card-image {
         max-width: 80px;
         height: auto;
+    }
+
+    .card {
+        width: 16rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .wdt-skills {
+        width: 100%;
+        flex-wrap: wrap; /* Ícones de habilidades quebram linha se necessário */
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .card-image {
+        max-width: 60px;
+    }
+
+    .accordion-header p {
+        font-size: 14px; /* Texto menor para não sobrepor no mobile */
+        margin: 0 10px !important;
+    }
+
+    .presentation {
+        align-items: center;
+        margin-bottom: 20px !important;
     }
 }
