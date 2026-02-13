@@ -33,9 +33,9 @@ body {
     border-radius: 100%;
 }
 
-/* .wdt-redes {
+.wdt-redes {
     width: 50%;
-} */
+}
 
 .redes {
     width: 60px;
@@ -121,7 +121,7 @@ li {
     height: 500px;
 }
 
-.img-contact img{
+.img-contact img {
     width: 50px;
     height: auto;
 }
@@ -141,39 +141,43 @@ li {
         justify-content: space-between;
     }
 
-    /* .redes {
-        width: 40px;
-    } */
+    .redes {
+        width: 50px;
+    }
 
     .card-image {
         max-width: 80px;
         height: auto;
     }
-
-    .card {
-        width: 16rem;
-    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .wdt-skills {
         width: 100%;
-        flex-wrap: wrap; /* Ícones de habilidades quebram linha se necessário */
+        flex-wrap: wrap;
+        /* Ícones de habilidades quebram linha se necessário */
         justify-content: center;
         gap: 15px;
     }
-    
+
     .card-image {
         max-width: 60px;
     }
 
     .accordion-header p {
-        font-size: 14px; /* Texto menor para não sobrepor no mobile */
+        font-size: 14px;
+        /* Texto menor para não sobrepor no mobile */
         margin: 0 10px !important;
     }
 
     .presentation {
         align-items: center;
         margin-bottom: 20px !important;
+    }
+
+    .contacts {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }

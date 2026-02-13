@@ -68,45 +68,52 @@
             </div>
             <div class="mx-5 mt-5">
                 <h2 class="text-center pb-5">Habilidades</h2>
-                <div class="swiper">
-                    <ul class="card-list swiper-wrapper">
-                        <li class="swiper-slide d-flex flex-column align-items-center">
-                            <h3 class="fs-3 text-center pb-1">Back End</h3>
-                            <div class="swiper-button-prev mt-2"></div>
-                            <div class="card-link d-flex justify-content-between align-items-center wdt-skills pt-4">
-                                <img class="card-image" src="./img/CSharp.svg" alt="Ícone do Csharp" />
-                                <img class="card-image" src="./img/Java.svg" alt="Ícone do Java" />
-                                <img class="card-image" src="./img/javascript.svg" alt="Ícone do javascript" />
-                                <img class="card-image" src="./img/Node.js.svg" alt="Ícone do Node js" />
-                                <img class="card-image" src="./img/rest-api.png" alt="Ícone da Rest API" />
-                            </div>
-                            <div class="swiper-button-next mt-2"></div>
-                        </li>
-                        <li class="swiper-slide d-flex flex-column align-items-center">
-                            <h3 class="fs-3 text-center pb-1">Front End</h3>
-                            <div class="swiper-button-prev mt-2"></div>
-                            <div class="card-link d-flex justify-content-between align-items-center wdt-skills pt-4">
-                                <img class="card-image" src="./img/HTML5.svg" alt="Ícone do html" />
-                                <img class="card-image" src="./img/CSS3.svg" alt="Ícone do css" />
-                                <img class="card-image" src="./img/javascript.svg" alt="Ícone do javascript" />
-                                <img class="card-image" src="./img/React.svg" alt="Ícone do react.js" />
-                            </div>
-                            <div class="swiper-button-next mt-2"></div>
-                        </li>
-                        <li class="swiper-slide d-flex flex-column align-items-center">
-                            <h3 class="fs-3 text-center pb-1">Tools</h3>
-                            <div class="swiper-button-prev mt-2"></div>
-                            <div class="card-link d-flex justify-content-between align-items-center wdt-skills pt-4">
-                                <img class="card-image" src="./img/Git.svg" alt="Ícone do Git" />
-                                <img class="card-image" src="./img/GitHub.svg" alt="Ícone do Github" />
-                                <img class="card-image" src="./img/VSCode.svg" alt="Ícone do Visual Studio Code" />
-                                <img class="card-image" src="./img/VisualStudio.svg" alt="Ícone do Visual Studio" />
-                                <img class="card-image" src="./img/sql.svg" alt="Ícone da SQL server" />
-                            </div>
-                            <div class="swiper-button-next mt-2"></div>
-                        </li>
-                    </ul>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img class="card-image" src="./img/CSharp.svg" alt="Ícone do Csharp" />
+                            <img class="card-image" src="./img/Java.svg" alt="Ícone do Java" />
+                            <img class="card-image" src="./img/javascript.svg" alt="Ícone do javascript" />
+                            <img class="card-image" src="./img/Node.js.svg" alt="Ícone do Node js" />
+                            <img class="card-image" src="./img/rest-api.png" alt="Ícone da Rest API" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img class="card-image" src="./img/HTML5.svg" alt="Ícone do html" />
+                            <img class="card-image" src="./img/CSS3.svg" alt="Ícone do css" />
+                            <img class="card-image" src="./img/javascript.svg" alt="Ícone do javascript" />
+                            <img class="card-image" src="./img/React.svg" alt="Ícone do react.js" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img class="card-image" src="./img/Git.svg" alt="Ícone do Git" />
+                            <img class="card-image" src="./img/GitHub.svg" alt="Ícone do Github" />
+                            <img class="card-image" src="./img/VSCode.svg" alt="Ícone do Visual Studio Code" />
+                            <img class="card-image" src="./img/VisualStudio.svg" alt="Ícone do Visual Studio" />
+                            <img class="card-image" src="./img/sql.svg" alt="Ícone da SQL server" />
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+
+
+
             </div>
             <div class="mx-5 mt-5">
                 <h2 class="text-center pb-5">Experiência</h2>
@@ -114,8 +121,8 @@
                     <div class="accordion-item">
                         <div class="accordion-header bg-body-tertiary d-flex align-items-center justify-content-between py-4 rounded-top-4 rounded-bottom-4 cursor-pointer" 
                         data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <p class="mx-5 mb-0 fs-6">Analista de TI Jr - Seara Alimentos LTDA</p>
-                            <p class="mx-5 mb-0 fs-6">Junho, 2022 - Atual Emprego</p>
+                            <p class="ms-5 mb-0 fs-6 text-start">Analista de TI Jr<br/>Seara Alimentos LTDA</p>                            
+                            <p class="me-5 mb-0 fs-6 text-end">Junho, 2022<br/>Atual Emprego</p>
                         </div>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body bg-secondary text-white d-flex align-items-center justify-content-between px-5 my-0 y-4 rounded-bottom-4">
@@ -131,8 +138,8 @@
                     <div class="accordion-item pt-4">
                         <div class="accordion-header bg-body-tertiary d-flex align-items-center justify-content-between py-4 rounded-top-4 rounded-bottom-4 cursor-pointer"
                         data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <p class="mx-5 mb-0 fs-6">Jovem Aprendiz - Metalúrgica Golin</p>
-                            <p class="mx-5 mb-0 fs-6">Fevereiro, 2022 - Junho 2022</p>
+                            <p class="ms-5 mb-0 fs-6 text-start">Jovem Aprendiz<br/>Metalúrgica Golin</p>
+                            <p class="me-5 mb-0 fs-6 text-end">Fevereiro, 2022<br/>Junho 2022</p>
                         </div>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body bg-secondary text-white d-flex align-items-center justify-content-between px-5 my-0 py-4 rounded-bottom-4">
@@ -148,20 +155,26 @@
             </div>
             <div class="mx-5 mt-5">
                 <h2 class="text-center pb-5">Projetos</h2>
-                <div class="cards d-flex align-items-center justify-content-between">   
-                    <div class="card border border-0" style="width: 18rem;">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">   
+                    <div class="card mb-5 border border-0 col">
                         <img src="./img/tech-hackers.png" class="card-img-top rounded-top-4" alt="Imagem do site tech hackers">
                         <button class="card-body bg-body-tertiary text-white text-center rounded-bottom-4 fs-6">
                             Link do projeto
                         </button>
                     </div>
-                    <div class="card border border-0" style="width: 18rem;">
+                    <div class="card mb-5 border border-0 col">
                         <img src="./img/tech-hackers.png" class="card-img-top rounded-top-4" alt="Imagem do site tech hackers">
                         <button class="card-body bg-body-tertiary text-white text-center rounded-bottom-4 fs-6">
                             Link do projeto
                         </button>
                     </div>
-                    <div class="card border border-0" style="width: 18rem;">
+                    <div class="card mb-5 border border-0 col">
+                        <img src="./img/tech-hackers.png" class="card-img-top rounded-top-4" alt="Imagem do site tech hackers">
+                        <button class="card-body bg-body-tertiary text-white text-center rounded-bottom-4 fs-6">
+                            Link do projeto
+                        </button>
+                    </div>
+                    <div class="card mb-5 border border-0 col">
                         <img src="./img/tech-hackers.png" class="card-img-top rounded-top-4" alt="Imagem do site tech hackers">
                         <button class="card-body bg-body-tertiary text-white text-center rounded-bottom-4 fs-6">
                             Link do projeto
@@ -169,85 +182,47 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="mx-5 mt-5">
-                <h2 class="text-center pb-5">Contatos</h2>
-                <div class="contact d-flex align-items-center justify-content-between">
-                    <div class="img-contact w-50 h-100 d-flex flex-column justify-content-between ">
-                        <p class="fs-3 mb-0">Entre em contato</p>
-                        <a href="https://github.com/Robert-025" class="d-flex align-items-center text-decoration-none">
-                            <img src="./img/Github.png" alt="Logo do Github">
-                            <p class="mb-0 ms-2 fs-5">GithHub</p>                            
-                        </a>
-                        <a href="https://www.linkedin.com/in/robert-sena-santos/" class="d-flex align-items-center text-decoration-none">
-                            <img src="./img/LinkedIn.svg" alt="Logo do LinkedIn">
-                            <p class="mb-0 ms-2 fs-5">LinkedIn</p>     
-
-                        </a>
-                        <a href="https://wa.me/5511989508374" class="d-flex align-items-center text-decoration-none">
-                            <img src="./img/Whatsapp.png" alt="Logo do WhatsApp">
-                            <p class="mb-0 ms-2 fs-5">WhatsApp</p>                            
-                        </a>
-                        <a href="https://www.instagram.com/eosenaxx/" class="d-flex align-items-center text-decoration-none">
-                            <img src="./img/instagram.png" alt="Logo do Instagram">
-                            <p class="mb-0 ms-2 fs-5">Instagram</p>                            
-                        </a>                        
+            <section id="contatos" class="mx-5">
+                <h2 class="text-center mb-5">Contatos</h2>
+                <div class="row g-5">
+                    <div class="col-12 col-md-6 contacts">
+                        <h3>Entre em contato</h3>
+                        <div class="d-flex flex-column gap-3 mt-4">
+                            <a href="#" class="text-white text-decoration-none fs-5 d-flex align-items-center gap-2">
+                                <img src="./img/Github.png" width="45" alt="Logo do Github">GitHub
+                            </a>
+                            <a href="#" class="text-white text-decoration-none fs-5 d-flex align-items-center gap-2">
+                                <img src="./img/instagram.png" width="45" alt="Logo do Instagram">Instagram
+                            </a>
+                            <a href="https://www.linkedin.com/in/robert-sena-santos/" class="text-white text-decoration-none fs-5 d-flex align-items-center gap-2">
+                                <img src="./img/LinkedIn.svg" width="45" alt="Logo do LinkedIn">LinkedIn
+                            </a>
+                            <a href="#" class="text-white text-decoration-none fs-5 d-flex align-items-center gap-2">
+                                <img src="./img/Whatsapp.png" width="45" alt="Logo do WhatsApp">WhatsApp
+                            </a>
+                        </div>
                     </div>
-                    <form class="form-email w-50 h-100 d-flex flex-column justify-content-between align-items-center">
-                        <div class="w-100">
-                            <label class=" fs-6 pb-1" for="name">Nome</label> 
-                            <input class="w-100 border border-0 rounded py-1 text-black" type="text" id="name" name="name" required>
-                        </div>
-                        <div class="w-100">
-                            <label class=" fs-6 pb-1" for="email">E-Mail</label> 
-                            <input class="w-100 border border-0 rounded py-1 text-black" type="email" id="email" name="email" required>
-                        </div>
-                        <div class="w-100">
-                            <label class=" fs-6 pb-1" for="title">Título</label> 
-                            <input class="w-100 border border-0 rounded py-1 text-black" type="text" id="title" name="title" required>
-                        </div>
-                        <div class="w-100">
-                            <label class=" fs-6 pb-1" for="message">Mensagem</label> 
-                            <textarea name="message" id="message" class="w-100 fs-6 border border-0 rounded text-black message-input text-break"></textarea>
-                        </div>
-                        <button class="fs-6 w-25 btn btn-light" type="submit" >Enviar</button>
-                    </form>
-                </div>
-            </div> -->
-            <section id="contatos" class="mt-5">
-            <h2 class="text-center mb-5">Contatos</h2>
-            <div class="row g-5">
-                <div class="col-12 col-md-6">
-                    <h3>Entre em contato</h3>
-                    <div class="d-flex flex-column gap-3 mt-4">
-                        <a href="#" class="text-white text-decoration-none fs-5 d-flex align-items-center gap-2">
-                            <img src="./img/Github.png" width="30" alt=""> GitHub
-                        </a>
-                        <a href="#" class="text-white text-decoration-none fs-5 d-flex align-items-center gap-2">
-                            <img src="./img/LinkedIn.svg" width="30" alt=""> LinkedIn
-                        </a>
+                    <div class="col-12 col-md-6">
+                        <form class="row g-3">
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Seu Nome" id="name" name="name" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" class="form-control" placeholder="E-mail" id="email" name="email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Título" id="title" name="title" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="4" placeholder="Sua Mensagem" name="message" id="message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-light w-100" type="submit">Enviar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <form class="row g-3">
-                        <div class="col-12">
-                            <input type="text" class="form-control" placeholder="Seu Nome" id="name" name="name" required>
-                        </div>
-                        <div class="col-12">
-                            <input type="email" class="form-control" placeholder="E-mail" id="email" name="email" required>
-                        </div>
-                        <div class="col-12">
-                            <input type="text" class="form-control" placeholder="Título" id="title" name="title" required>
-                        </div>
-                        <div class="col-12">
-                            <textarea class="form-control" rows="4" placeholder="Sua Mensagem" name="message" id="message"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-light w-100" type="submit">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
+            </section>
         </div>
         <footer class="bg-body-tertiary py-4 mt-5">
             <p class="text-center mb-0">Copyright @ Robert Sena</p>
