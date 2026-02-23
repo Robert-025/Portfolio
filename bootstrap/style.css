@@ -17,12 +17,28 @@ body {
     background-color: #08291D !important;
 }
 
+.nav {
+    justify-content: end !important;
+}
+
 .navbar a {
     color: #fff !important;
 }
 
 .nav-link:hover {
     color: #aaa !important;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
 }
 
 .btn-tamanho {
@@ -131,6 +147,33 @@ li {
     height: 150px;
 }
 
+/* Remove posicionamento absoluto */
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+    position: static;
+}
+
+/* Centraliza tudo */
+.carousel-controls-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Ajusta tamanho das setas */
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+}
+
+/* Remove margem padrão dos indicadores */
+.carousel-indicators {
+    margin: 0;
+}
+
 @media (max-width: 991px) {
     .btn-tamanho {
         width: 80%;
@@ -162,6 +205,17 @@ li {
 @media (max-width: 767px) {
     * {
         font-size: 12px;
+    }
+
+    .nav {
+        position: absolute;
+        top: 5vh;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around !important;
     }
 
     .wdt-skills {
