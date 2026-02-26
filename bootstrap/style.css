@@ -34,7 +34,7 @@ body {
     display: none;
 }
 
-.mobile-menu div {
+.line {
     width: 32px;
     height: 2px;
     background: #fff;
@@ -207,21 +207,38 @@ li {
         font-size: 12px;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
     .nav {
         position: absolute;
-        top: 5vh;
+        top: 7.2vh;
         right: 0;
         width: 50vw;
         height: 100vh;
         flex-direction: column;
         align-items: center;
         justify-content: space-around !important;
+        transform: translateX(100%);
+    }
+
+    .nav.active {
+        transform: translateX(0);
+    }
+
+    .nav li {
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
     }
 
     .wdt-skills {
         width: 100%;
         flex-wrap: wrap;
-        /* Ícones de habilidades quebram linha se necessário */
+        /* Ícones de habilidades quevvram linha se necessário */
         justify-content: center;
         gap: 15px;
     }

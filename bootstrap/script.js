@@ -1,3 +1,36 @@
+class MobileNavbar {
+  constructor(mobileMenu, nav, navLinks) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.nav = document.querySelector(nav);
+    this.navLinks = document.querySelector(navLinks);
+    this.activeClass = "active";
+  }
+
+  handleClick() {
+    
+    this.nav.classList.toogle(this.activeClass);
+  }
+
+  addClickEvent() {
+    this.mobileMenu.addEventListener("click", this.handleClick);
+  }
+
+  init() {
+    if(this.mobileMenu) {
+      this.addClickEvent();
+    }
+    return this;
+  }
+}
+
+const mobileNavbar = new MobileNavbar(
+  ".mobile-menu",
+  ".nav",
+  ".nav li"
+);
+
+mobileNavbar.init();
+
 new Swiper('.swiper', {
 loop: true,
 
