@@ -21,8 +21,13 @@ body {
     justify-content: end !important;
 }
 
-.navbar a {
+a {
     color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    padding: 30px 200px;
 }
 
 .nav-link:hover {
@@ -213,14 +218,16 @@ li {
 
     .nav {
         position: absolute;
-        top: 7.2vh;
+        top: 6.9vh;
         right: 0;
-        width: 50vw;
-        height: 100vh;
+        width: 60vw;
+        height: 95vh;
         flex-direction: column;
         align-items: center;
         justify-content: space-around !important;
         transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        font-size: 24px;
     }
 
     .nav.active {
@@ -228,7 +235,7 @@ li {
     }
 
     .nav li {
-        opacity: 0;
+        opacity: 1;
     }
 
     .mobile-menu {
@@ -262,5 +269,17 @@ li {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

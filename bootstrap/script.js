@@ -1,14 +1,24 @@
 class MobileNavbar {
-  constructor(mobileMenu, nav, navLinks) {
+  constructor(mobileMenu, navList, navLinks) {
     this.mobileMenu = document.querySelector(mobileMenu);
-    this.nav = document.querySelector(nav);
-    this.navLinks = document.querySelector(navLinks);
+    this.navList = document.querySelector(navList);
+    this.navLinks = document.querySelectorAll(navLinks);
     this.activeClass = "active";
+
+    this.handleClick = this.handleClick.bind(this); 
+  }
+
+  animateLinks() {
+    this.navLinks.forEach((link) => {
+      //Verifica se em cada link ele possui a propriedade animation na DOM
+      //Se existe, esvazia. Se não existe, adiciona.
+      link.style.animation ? (link.style.animation = "") : (link.style.animation = 'navLinkFade 0.5s ease forwards 0.3s') 
+
+    });
   }
 
   handleClick() {
-    
-    this.nav.classList.toogle(this.activeClass);
+    this.navList.classList.toggle(this.activeClass);
   }
 
   addClickEvent() {
@@ -26,10 +36,14 @@ class MobileNavbar {
 const mobileNavbar = new MobileNavbar(
   ".mobile-menu",
   ".nav",
-  ".nav li"
+  ".nav li",
+  
 );
-
 mobileNavbar.init();
+
+// console.log(mobileNavbar)
+
+// Carrosel das skills
 
 new Swiper('.swiper', {
 loop: true,
@@ -44,6 +58,8 @@ loop: true,
   },
 
 });
+
+// Efeito das vagas
 
 const accordions = document.querySelectorAll('.accordion-item');
 
