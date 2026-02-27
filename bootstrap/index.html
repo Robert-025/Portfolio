@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand">Robert Sena</a>
+                <a class="navbar-brand" >Robert Sena</a>
                 <div class="mobile-menu">
                     <div class="line"></div>
                     <div class="line"></div>
@@ -25,46 +25,42 @@
                 </div>
                 <ul class="nav nav-list bg-body-tertiary">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Sobre</a>
+                        <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Habilidades</a>
+                        <a class="nav-link" aria-current="page" href="#habilidades">Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Experiências</a>
+                        <a class="nav-link" aria-current="page" href="#experiencia">Experiências</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Projetos</a>
+                        <a class="nav-link" aria-current="page" href="#projetos">Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Contatos</a>
+                        <a class="nav-link" aria-current="page" href="#contatos">Contatos</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <div class="container">
-        <div class="row align-items-center justify-content-center mx-1 mx-md-5 pt-5">
-            <div
-                class="col-12 col-md-6 text-center text-md-start text-light d-flex flex-column mb-5 mb-md-0 presentation">
+        <section class="row align-items-center justify-content-center mx-1 mx-md-5 pt-5" id="home">
+            <div class="col-12 col-md-6 text-center text-md-start text-light d-flex flex-column mb-5 mb-md-0 presentation">
                 <p class="fs-4">Olá, eu sou o</p>
                 <h1 class="display-4 fw-bold">Robert Sena!</h1>
                 <p class="fs-4">Desenvolvedor<br />Full Stack</p>
                 <a class="btn btn-outline-light btn-tamanho mx-auto mx-md-0" href="#" role="button">Currículo</a>
                 <div class="mt-4 d-flex justify-content-md-between align-items-center wdt-redes">
-                    <a href="https://www.instagram.com/eosenaxx/"><img src="./img/instagram.png" class="redes"
-                            alt="Instagram" /></a>
-                    <a href="https://www.linkedin.com/in/robert-sena-santos/"><img src="./img/LinkedIn.svg"
-                            class="redes" alt="LinkedIn" /></a>
-                    <a href="https://github.com/Robert-025"><img src="./img/Github.png" class="redes"
-                            alt="GitHub" /></a>
+                    <a href="https://www.instagram.com/eosenaxx/"><img src="./img/instagram.png" class="redes" alt="Instagram" /></a>
+                    <a href="https://www.linkedin.com/in/robert-sena-santos/"><img src="./img/LinkedIn.svg" class="redes" alt="LinkedIn" /></a>
+                    <a href="https://github.com/Robert-025"><img src="./img/Github.png" class="redes" alt="GitHub" /></a>
                 </div>
             </div>
             <div class="col-12 col-md-6 text-center">
                 <img src="./img/eu.jpg" class="img-fluid foto w-75" alt="Foto do Robert" />
             </div>
-        </div>
-        <div class="backgroud-sobre mx-5 mt-5 py-4">
+        </section>
+        <section class="backgroud-sobre mx-5 mt-5 py-4" id="sobre">
             <h2 class="text-center">Sobre</h2>
             <p class="mx-5 fs-6 pt-5 pb-1">Olá! Eu me chamo Robert. Tenho uma graduação em Análise e Desenvolvimento de
                 Sistemas pelo Centro Universitário de Tecnologia Carlos Drummond de Andrade, e também um técnico em
@@ -74,8 +70,8 @@
                 Estou sempre me motivando a aceitar novos desafios e contribuir com softwares inovadores e soluções
                 atualizadas.<br /><br />Fora do computador, gosto de passar tempo com minha família e amigos e escutar
                 bastante música. São as atividades que me ajudam a manter o foco nas atividades do dia a dia.</p>
-        </div>
-        <div class="mx-5 mt-5">
+        </section>
+        <section class="mx-5 mt-5" id="habilidades">
             <h2 class="text-center pb-5">Habilidades</h2>
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-inner">
@@ -120,8 +116,8 @@
                     </button>
                 </div>
             </div>
-        </div>
-        <div class="mx-5 mt-5">
+        </section>
+        <section class="mx-5 mt-5" id="experiencia">
             <h2 class="text-center pb-5">Experiência</h2>
             <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
@@ -173,8 +169,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="mx-5 mt-5">
+        </section>
+        <section class="mx-5 mt-5" id="projetos">
             <h2 class="text-center pb-5">Projetos</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                 <div class="card mb-5 border border-0 col">
@@ -202,7 +198,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
         <section id="contatos" class="mx-5">
             <h2 class="text-center mb-5">Contatos</h2>
             <div class="row g-5">
