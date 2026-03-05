@@ -14,12 +14,18 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 header {
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+section { 
+    scroll-margin-top: 100px;
 }
 
 .bg-body-tertiary {
@@ -229,7 +235,7 @@ li {
         position: absolute;
         top: 5.4vh;
         right: 0;
-        width: 60vw;
+        width: 50vw;
         height: 650px;
         flex-direction: column;
         text-align: center;
